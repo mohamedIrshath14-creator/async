@@ -1,0 +1,29 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+
+ <h2>food order app</h2>
+  <button id="btn">Order Food</button>
+  <p id="status"></p>
+  <script>
+
+    let btn=document.getElementById("btn");
+    let statustext=document.getElementById("status");
+    btn.onclick=function(){
+        statustext.innerHTML="food ordered";
+        setTimeout(function(){
+            statustext.innerHTML+="<br>food arrived!";
+        }, 5000);
+        statustext.innerHTML+="<br> started watching movie";
+        statustext.innerHTML+="<br> enjoying ,movie";
+
+    }
+  </script>
+ <body>
+    
+ </body>
+ </html>
